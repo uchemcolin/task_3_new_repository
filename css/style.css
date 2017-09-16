@@ -1,0 +1,356 @@
+/*CSS Stylesheet*/
+/*Copyright and full ownership @ Blindate Website. Designed by Covi*/
+@media all and (max-width: 1000px)
+{
+    video
+    {
+        display: none;
+    }
+    
+    /*#contents, #login-form-contents, #create-form-contents*/
+    section
+    {
+        background: url("../screenshot.png") no-repeat;
+        background-color: gray;
+        background-size: cover;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+    }
+
+    #footer
+    {
+       position: absolute !important;
+       top: 620px  !important;
+       width: 100%  !important;
+    }
+}
+
+@media all and (max-width: 410px)
+{
+    video
+    {
+        display: none;
+    }
+    
+    /*#contents, #login-form-contents, #create-form-contents*/
+    section
+    {
+        background: url("../screenshot.png") no-repeat;
+        background-color: gray;
+        background-size: cover;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+    }
+
+    body
+    {
+        background-color: gray;
+    }
+
+    #footer
+    {
+       position: absolute !important;
+       top: 720px  !important;
+       width: 100%  !important;
+       z-index: -1;
+    }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1039px)
+{
+    body
+    {
+        background: grey;
+    }
+
+    #meet-people-text
+    {
+        margin-top: 50px !important;
+    }
+
+    #footer
+    {
+       position: absolute !important;
+       top: 470px  !important;
+       width: 100%  !important;
+    }
+
+    #form
+    {
+        margin-top: 10px !important;
+    }
+}
+
+@media all and (min-width: 571px)
+{
+    #meet-people-text #first-img
+    {
+         margin-left: 410px !important;
+    }
+}
+
+@media all and (max-width: 570px)
+{
+    #meet-people-text #first-img
+    {
+        margin-left: none !important;
+    }
+}
+
+@media all and (max-width: 410px)
+{
+    .full
+    {
+        float: none !important;
+        width: 100% !important;
+    }
+}
+
+video
+{
+    margin-top: -5px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 10px solid pink;
+    position: absolute;
+    top: 0px;
+}
+
+#contents
+{
+    position: absolute;
+    top: 0px;
+    z-index: 9999999px;
+    width: 100%;
+}
+
+#login-form-contents
+{
+    width: 100%;
+}
+
+#create-form-contents
+{
+    width: 100%;
+}
+
+#footer
+{
+    position: absolute;
+    top: 620px;
+    width: 100%;
+}
+
+#login-btn
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+#last-login-btn
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+#signup-btn
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+#meet-people-text
+{
+    margin-top: 200px;
+    text-align: center;
+}
+
+#form
+{
+    margin-top: 70px;
+    /*text-align: center;*/
+    background-color: rgba(255,255,255,0.9);
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 2px -5px 20px rgba(150,150,150,0.8);
+}
+
+#terms-and-conditions
+{
+    color: rgba(250,250,250,0.9);
+}
+
+#form a
+{
+    border-bottom: 1px dashed black;
+    color: black;
+    text-decoration: none;
+}
+
+#form a:visited
+{
+    border-bottom: 1px dashed black;
+    color: black;
+    text-decoration: none;
+}
+
+#form a:hover
+{
+    border-bottom: 1px dashed black;
+    color: black;
+    text-decoration: none;
+}
+
+.form-div
+{
+    margin: 20px 50px 90px 20px;
+}
+
+#form button
+{
+    border-radius: 30px;
+}
+
+#sign-in-icon
+{
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#first-btn-in-form
+{
+    border: 1px solid rgb(47,56,176);
+    background-color: rgb(47,56,176);
+    padding: 5px 20px 5px 20px;
+    color: white;
+}
+
+#email, #password, #firstname, #lastname, #days, #months, #years, #location, #gender, #meet
+{
+    border-radius: 30px !important;
+    height: 40px;
+}
+
+#location
+{
+    width: 100%;
+    padding: none !important;
+}
+
+#last-btn-in-form
+{
+    border: 1px solid orangered;
+    background-color: orangered;
+    padding: 5px 20px 5px 20px;
+    box-shadow: 1px 1px 2px black;
+    color: white;
+    width: 50%;
+}
+
+#last-btn-in-form2
+{
+    border: 1px solid orangered;
+    background-color: orangered;
+    padding: 5px 20px 5px 20px;
+    box-shadow: 1px 1px 2px black;
+    color: white;
+    width: 50%;
+}
+
+#last-form-btn-div
+{
+    margin-top: 30px;
+}
+
+#last-form-btn-div2
+{
+    /*margin-top: 50px;*/
+}
+
+#meet-people-text h1
+{
+    color: white;
+}
+
+#login-btn
+{
+    border: 1px solid black;
+}
+
+#last-login-btn
+{
+    border: 1px solid black;
+}
+
+#signup-btn
+{
+    border: 1px solid black;
+}
+
+@media all and (min-width: 0px)
+{
+    video
+    {
+        width: 100%;
+        height: 720px;
+    }
+}
+
+@media (min-aspect-ratio: 16/9)
+{
+    video
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9)
+{
+    video
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#become-a-member-btn
+{
+    border: 1px solid pink;
+    background-color: pink;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 28px 10px 28px;
+    font-size: 1.5em;
+    margin-top: 100px;
+}
+
+#become-a-member-btn:hover
+{
+    border: 1px solid pink;
+    color: black;
+}
+
+#port-harcourt
+{
+    border-bottom: 5px solid white;
+}

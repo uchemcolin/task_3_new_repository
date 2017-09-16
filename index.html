@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <title>Blindate</title>
+        <!--<link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css" media="all" />-->
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Palanquin" rel="stylesheet">
+        <!-- //my css-->
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- js -->
+        <script type="text/javascript" src="jquery/jquery-2.1.4.min.js"></script>
+        <!-- //js -->
+        <!--Animate.css-->
+        <link href="animate/animate.css" rel="stylesheet" type="text/css"/>
+        <!--//animate.css-->
+        <!-- font-awesome-icons -->
+        <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"> 
+        <!-- //font-awesome-icons -->
+        <!--jQuery Slider UI CSS-->
+        <link rel="stylesheet" href="jquery/css/jquery-ui.min.css">
+        <!--jQuery UI-->
+        <script src = "jquery/jquery-ui.js"></script>
+        <!--My Js with Wow.js-->
+        <script src="wow/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+        <!--//js-->
+        <!-- Javascript -->
+        <script src="jquery/jquery-1.12.4.js"></script>
+        <script src="jquery/jquery-ui.js"></script>
+        <script type="text/javascript">
+            $(init);
+            function init()
+            {
+                var video = $("video");
+
+                $("#contents").show();
+                $("#login-form-contents").hide();
+                $("#create-form-contents").hide();
+
+                for(i =1; i < 32; i++)
+                {
+                    $("#days").append("<option id='" + i +"'>"+ i + "</option>");
+                }
+
+                var year = 1998;
+                for(i = 1; i < 51; i++)
+                {
+                    $("#years").append("<option id='" + i +"'>"+ year + "</option>");
+                    year = year - 1;
+                }
+
+
+                showContents();
+                showLogin();
+                showSignUp();
+                showLoginAgain();
+                //video.attr("width", "1280px");
+                //video.attr("height", "720px");
+                //video.attr("width", $(window).width());
+                //video.attr("height", $(window).height());
+                //var window_width = $(window).width();
+                //var window_height = $(window).height();
+                //alert(video.height());
+                /*var window = {
+                    width: window_width,
+                    height: window_height
+                    //width: "100px",
+                    //height: "50px"
+                };
+                //alert(window.width);
+                //var new_width = video.width(window.width);
+                /*video.attr("width", $(window).width());
+                video.attr("width", $(height).height());
+                //alert($(window).width());*/
+                //alert(video.width());
+                //alert(new_width);
+                //video.width(window.width);
+                //video.height(window.height);
+                //alert($(window).height());
+            }
+
+            function showContents()
+            {
+                $("#login-btn").click(function()
+                    {
+                        $("#contents").hide();
+                        $("#login-form-contents").show();
+                        $("#create-form-contents").hide();
+                    }
+                );
+            }
+
+            function showLogin()
+            {
+                $("#signup-btn").click(function()
+                    {
+                        $("#contents").hide();
+                        $("#login-form-contents").show();
+                        $("#create-form-contents").hide();
+                    }
+                );
+            }
+
+            function showSignUp()
+            {
+                $("#signup-btn").click(function()
+                    {
+                        $("#contents").hide();
+                        $("#login-form-contents").hide();
+                        $("#create-form-contents").show();
+                    }
+                );
+
+                $("#become-a-member-btn").click(function()
+                    {
+                        $("#contents").hide();
+                        $("#login-form-contents").hide();
+                        $("#create-form-contents").show();
+                    }
+                );
+            }
+
+            function showLoginAgain()
+            {
+                $("#last-login-btn").click(function()
+                    {
+                        $("#contents").hide();
+                        $("#login-form-contents").show();
+                        $("#create-form-contents").hide();
+                    }
+                );
+            }
+        </script>
+    </head>
+    <body>
+        <section>
+            <video autoplay loop muted>
+                <source src = "blindDate.mp4" type="video/mp4">
+                    Your browser does not support embedded video through HTML 5.
+            </video>
+            <div class="container" id="contents">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" id="login-btn" class="pull-right">Login</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="meet-people-text">
+                        <h1><span>Meet new people!</span> <span id="port-harcourt"><strong>PortHarcourt</strong></span></h1>
+                        <img src="images/screenshot.png" width="25px" height="25px" style="border-radius: 50%;" id="first-img"/>
+                        <img src="images/screenshot.png" width="25px" height="25px" style="border-radius: 50%;"/>
+                        <img src="images/screenshot.png" width="25px" height="25px" style="border-radius: 50%;"/>
+                        <img src="images/screenshot.png" width="25px" height="25px" style="border-radius: 50%;"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <center><button type="button" id="become-a-member-btn">Become a member now</button></center>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="login-form-contents">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" id="signup-btn" class="pull-right">Create an account</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <form role="form" id="form">
+                            <div class="form-div">
+                                <div class="form-group">
+                                    <button type="button" id="first-btn-in-form"><span class="fa fa-sign-in fa-fw" id="sign-in-icon"></span> Login</button>
+                                </div>
+                                <div class="form-group">
+                                    <h2>Welcome to Blindate</h2>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="info@blinddate.com"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password" placeholder="*********"/>
+                                    <p class="pull-right"><a href="#">do you forget your passowrd?</a></p>
+                                </div>
+                                <div class="form-group" id="last-form-btn-div">
+                                    <button type="button" id="last-btn-in-form">Login</button>
+                                </div>
+                                <div class="form-group">
+                                    <p id="term-and-conditions">By continuing, you are confirming that you have read and agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="create-form-contents">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" id="last-login-btn" class="pull-right">Login</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <form role="form" id="form" style="margin-top: 10px !important;">
+                            <div class="form-div" style="margin-bottom: 10px !important;">
+                                <div class="form-group">
+                                    <button type="button" id="first-btn-in-form"><span class="fa fa-sign-in fa-fw" id="sign-in-icon"></span> Login</button>
+                                </div>
+                                <div class="form-group">
+                                    <h3>Become a member now</h3>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="firstname" placeholder="Your First Name"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Your Last Name"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Your email"/>
+                                </div>
+                                <div class="form-group">
+                                    <div class="full" style="width: 33.3%; float: left;">
+                                        <select class="form-control" id="days" style="margin-left: none;">
+                                            <option id="" selected="selected">Day</option>
+                                        </select>
+                                    </div>
+                                    <div class="full" style="width: 33.3%; float: left; padding-left: 5px; padding-right: 5px;">
+                                        <select class="form-control" id="months">
+                                            <option id="month" selected="selected">Month</option>
+                                        </select>
+                                    </div>
+                                    <div class="full" style="margin-bottom: 10px; width: 33.3%; float: left;">
+                                        <select class="form-control" id="years">
+                                            <option id="year" selected="selected">Year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="location">
+                                        <option id="">Lagos</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="full" style="width: 50%; float: left; padding-right: 5px;">
+                                        <select class="form-control" id="gender" style="margin: none;">
+                                            <option id="">Male</option>
+                                            <option id="">Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="full" style="margin-bottom: 10px; width: 50%; float: left; padding-left: 5px;">
+                                        <select class="form-control" id="meet">
+                                            <option id="">Meet girls</option>
+                                            <option id="">Meet men</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="last-form-btn-div2">
+                                    <button type="button" id="last-btn-in-form2">Sign Up</button>
+                                </div>
+                                <div class="form-group">
+                                    <p id="term-and-conditions">By continuing, you are confirming that you have read and agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="footer">
+                <div class="row" style="color: white;">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div><h3>1,473</h3></div>
+                        <div>Users</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="pull-right" style="margin-top: 15px;">
+                            <a href="#"><img src="images/Googleplay.png" width="125px" height="50px"/></a>
+                            <a href="#"><img src="images/itunes-app-store-logo.png" width="125px" height="50px"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+<!--Copyright and full ownership @ Blindate Website. Designed by Covi-->
